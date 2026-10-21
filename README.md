@@ -42,8 +42,17 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
+Community: r/television (https://www.reddit.com/r/television/)
 
+There are multiple posts where their source is from variety and some other posts marked for discussion among users. Some are news articles, and other are aggregations of content, such as trailers or analysis. 
 
+Candidate Distinctions:
+
+Around half of the posts reference a news site. Most don't
+
+Some of the posts have a link to media (i.e trailer, image). Most don't
+
+Some of the posts are intended for conversation between subreddit users. 
 ---
 
 ## Label Taxonomy
