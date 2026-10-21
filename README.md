@@ -63,35 +63,43 @@ Some of the posts are intended for conversation between subreddit users.
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `Discussion`
 
-**Definition:**
-
-**Example 1:**
->
-
-**Example 2:**
->
-
-### `label_two`
-
-**Definition:**
+**Definition:** A discussion post usually has a question as the main title, with the main intetion of asking people to discuss the premise of the question:
 
 **Example 1:**
->
+> https://www.reddit.com/r/television/comments/1xbatjg/dan_castellaneta_as_homer_simpson_might_be_the/
 
 **Example 2:**
->
+> https://www.reddit.com/r/television/comments/1xbvt1x/stunt_casting/
+
+### `Media Post`
+
+**Definition:** A post within r/television that has a title, but is meant to discuss a trailer or piece of media, such as an image or video. 
+
+**Example 1:**
+> https://www.reddit.com/r/television/comments/1xbs02j/the_lord_of_the_rings_the_rings_of_power_season_3/
+
+**Example 2:**
+> https://www.reddit.com/r/television/comments/1xbyfcm/avatar_seven_havens_an_old_world_mover_paramount/
+
+### `News`
+
+**Definition:** A post within the forum that leads toward a news site, often containing details or additional information about the television industry. Contains quotes from the story and an reference to an entertainment news site
+
+**Example 1:**
+> https://www.reddit.com/r/television/comments/1wq1l4b/the_rehearsals_nathan_fielder_just_helped_a/
+
+**Example 2:**
+> https://www.reddit.com/r/television/comments/1xbanp1/wga_east_is_helping_writers_make_it_harder_for_ai/
 
 ### The hardest boundary
 
 **Which two labels:**
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
 
-
+if the post hyperlinks to a video or image, it's media, even if the tone is heated. 
 
 ---
 
@@ -101,7 +109,7 @@ Some of the posts are intended for conversation between subreddit users.
      cases. -->
 
 **Where the posts came from:**
-
+https://www.reddit.com/r/television/
 **How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
 
