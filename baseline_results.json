@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": false,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.5666666666666667,
+    "f1_macro": 0.5536685536685537,
+    "per_label": {
+      "answer": {
+        "precision": 0.5,
+        "recall": 0.2,
+        "f1": 0.28571428571428575,
+        "support": 10
+      },
+      "joke": {
+        "precision": 1.0,
+        "recall": 0.625,
+        "f1": 0.7692307692307693,
+        "support": 8
+      },
+      "opinion": {
+        "precision": 0.47619047619047616,
+        "recall": 0.8333333333333334,
+        "f1": 0.6060606060606061,
+        "support": 12
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "Don\u2019t worry they\u2019ll rely on high GDP states like most red states do",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Can I pet dat daaaaawg?",
+      "gold": "joke",
+      "predicted": "joke"
+    },
+    {
+      "text": "The new luxury: stretch Limeo",
+      "gold": "joke",
+      "predicted": "opinion"
+    },
+    {
+      "text": "me in the comments\n https://giphy.com/gifs/5xtDarm27LJsTNrwHBe",
+      "gold": "joke",
+      "predicted": "joke"
+    },
+    {
+      "text": "COLORMATTERS MOTION PICTURE FILM SCANNING AND INSTAX PRINTING\n Bring your 8mm, Super 8, 16mm or 35mm film into the digital age.\n Colormatters offers professional motion picture film scanning services to help you preserve your valuable memories. Convert your motion picture film into high-quality digital files, supporting resolutions up to 4K. More details @ https://colormatters.tv/motion-picture-film-scanning/\n Scanning samples @ https://colormatters.tv/film-scanning-portfolio/\n INSTAX\n Got photos stuck on your phone? Turn them into real Instax prints.\n Take your digital files and print them on actual Fujifilm Instax Mini Film.\n Perfect for gifts, scrapbooks, or that wall you keep meaning to decorate.\n https://preview.redd.it/0c68fm32l80i1.jpeg?width=1499&format=pjpg&auto=webp&s=050cb6c410d28bad28ec3e58d46a2d0f8be131c4",
+      "gold": "answer",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Realtor specializing in Eastside?\n My husband and I will be in the area next week (11/10-13) and looking for someone to take us out on a few house visits. If you know a sharp, friendly, experienced Realtor who knows Sammamish, Bellevue, etc. well, could you DM me? We\u2019re on the young side of retired, if that makes a difference. Thanks.\n Edit: we don\u2019t have a really low budget but we are NOT looking for a \u201cluxury broker\u201d bc that is not our vibe.",
+      "gold": "answer",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Wait till you hear what they call their basketball team.",
+      "gold": "joke",
+      "predicted": "joke"
+    },
+    {
+      "text": "Feels like it could have been a plot in Spinal Tap.",
+      "gold": "joke",
+      "predicted": "joke"
+    },
+    {
+      "text": "No, it\u2019s entirely victim-centric. Law enforcement isn\u2019t contacted unless the user requests it. Officers are supposed to hand a little card to victims of hate/bias that notifies them of the hotline so it can be documented separately and to offer resources to victims.\n Hotline operators reach out to the victim (only if it is requested) to offer support but all reports are anonymous unless the user chooses to leave their name/contact info. It\u2019s anonymized to help increase reporting, since it\u2019s for minority communities who may not feel comfortable contacting police.",
+      "gold": "answer",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Holy heck! I have been trying to visit here for 13 years. Let\u2019s freakin go!",
+      "gold": "opinion",
+      "predicted": "answer"
+    },
+    {
+      "text": "I think moreso the fear is that, at literally any time, this insane administration COULD sieze all ballots or order that ballots not be delivered to certain places or in certain ways. \n I don't doubt that the employees absolutely want to do the right thing and ensure ballots are delivered safely and properly, but how many people in charge would actually defy direct federal instruction?",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Exactly. \n I'm not going to make any effort at all to change their minds. They can stay where they are and hate a place they know nothing about.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I'll take it! Great show!",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Love this idea! Another one - we purchased a bunch of Thanksgiving staples (canned veggies. Gravy, etc) and stocked our local little food pantry. Just another idea in case you don't find someone to sponsor!",
+      "gold": "answer",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Governments can claw back money - governments can do anything. Especially for treason. It\u2019s time America showed these people the way we treat treasonous worms. It\u2019s time to start calling a spade a spade- what they\u2019ve been doing is treason.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Shit, earlier today in Greenwood some guy shouted out of his SUV to me, \"white power.\"\n I wonder if this related or if there is something in the air today.",
+      "gold": "answer",
+      "predicted": "opinion"
+    },
+    {
+      "text": "The lead owner of the kraken is the same person who leads the company that has primary ownership of climate pledge - Samantha Holloway",
+      "gold": "answer",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Probably Newcastle. The view from the golf course at the top of the hill.",
+      "gold": "answer",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Advise your friend you post this on their local neighborhood facebook groups, and to read tips for finding missing cats in the Facebook group called \u201chagrid was lost in phinney ridge seattle wa\u201d. If they don\u2019t have Facebook it\u2019s worth creating a burner account to increase their chances of getting their cat back safely.",
+      "gold": "answer",
+      "predicted": "answer"
+    },
+    {
+      "text": "I was thinking sports team, like the New Zealand All Blacks.",
+      "gold": "joke",
+      "predicted": "opinion"
+    },
+    {
+      "text": "It looked like such a fun party!!! So many people came out for it, the energy was amazing",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "See, that wasn't so hard.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "For real. This is why I don't announce myself if there is ample space to pass. It's more dangerous to startle people and have them decide to jump in front of you.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Tennessee in particular is funny because they have no income tax and just banned property tax. So the state is gonna go bankrupt in a couple years. Have fun with that. You get what you vote for.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Do whatever gives you peace of mind, that\u2019s the most important thing. But I promise you it\u2019s business as usual at the actual usps offices around the country and the people you\u2019re reading about in the news haven\u2019t ever delivered mail or if they have, haven\u2019t touched the mail in decades. I know it all seems scary but we are carrying on as we always have.",
+      "gold": "opinion",
+      "predicted": "answer"
+    },
+    {
+      "text": "Just want to emphasize what OP said: If you have a damaged (or even lost) ballot, you can get a new one. Information is at the following URL: \n https://kingcounty.gov/en/dept/elections/how-to-vote/ballots/replacing-a-ballot-or-envelope\n Also, make sure to drop your ballot off at one of the King County ballot drop boxes:\n https://kingcounty.gov/en/dept/elections/how-to-vote/ballots/return-my-ballot/ballot-drop-boxes\n Don't trust USPS to deliver your ballot on time, especially the closer we get to election day. \n EDIT: Also also, track your ballot! Has it been sent? Has it been received? Has it been accepted? Do you need to fix something so it can be accepted? Here's the link:\n https://info.kingcounty.gov/kcelections/vote/myvoterinfo.aspx",
+      "gold": "answer",
+      "predicted": "answer"
+    },
+    {
+      "text": "Yes my friend is currently outside still, shaking the treats and looking around with a flashlight \ud83d\ude1e",
+      "gold": "answer",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Seattle whites? Sounds like a cigarette brand.",
+      "gold": "joke",
+      "predicted": "joke"
+    },
+    {
+      "text": "Ngl I was nervous to be in a big crowd but I only saw love and good vibes. \u00a1\u00a1\u00a1Todos se portan bien!!!",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Bro I was up LATE last night. 4-5am I was getting ready to sleep and I did a double take outside and was like wtf where is my fence. It just was SO foggy I couldn\u2019t see ANYTHING. It felt cool but spoooooopy!!!\n Oof now to fix my sleeping schedule!",
+      "gold": "joke",
+      "predicted": "opinion"
+    }
+  ]
+}

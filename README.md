@@ -177,11 +177,14 @@ Cold first, Pre-labelled with AI and corrected later.
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** 
+
+device: cpu  (CPU)
+torch:  2.14.1+cpu
 
 **Settings:** <!-- epochs, learning rate, batch size, seed -->
 
-**Anything I changed from the defaults, and why:**
+**Anything I changed from the defaults, and why:** No changes from default
 
 **Split sizes:** <!-- train / val / test, and per-label counts in the test
 split. If a label had fewer than about 8 in test, say so — it explains a lot
@@ -225,6 +228,13 @@ of next unit's variance. -->
 
 <!-- Both models on the same posts. `python baseline.py --trained results.json`
      prints this table for you. -->
+| Measure | Baseline |
+|---|---|
+| Overall accuracy | 0.567 |
+| Macro F1 | 0.554 |
+| F1 — `answer` | 0.286 |
+| F1 — `joke` | 0.769 |
+| F1 — `opinion` | 0.606 |
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
