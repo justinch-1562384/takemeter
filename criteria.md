@@ -42,26 +42,27 @@ Test-set accuracy is at least 0.70 on all three seeds.
 
 **Why this target:**
 When choosing this target, we want to keep the bounds tight but not exacting, as the type of post can vary based on the content. As such, 0.7 is a good baseline, with testing revealing whether the target is realistic or not. 
+
 ---
 
 ## 2.
 
-News has an F1 of at least 0.75 on all three seeds.
+Opinion has an F1 of at least 0.75 on all three seeds.
 
 
 **Why this target:**
-Given that the News section are the most numerous of the posts, the accuracy should increase as more data points are available. 
+Opinion is the most numerous label (94 of 200, about 14 per test split), so its F1 should be the highest and the most stable across seeds.
 
 ---
 
 ## 3.
 
-Discussion and Media Post each have an F1 of at least 0.55 on all three seeds.
+Answer has an F1 of at least 0.60 and Joke has an F1 of at least 0.50 on all three seeds.
 
 
 **Why this target:**
 
-This is noted due to the 
+Both labels are smaller than Opinion, so their targets are lower. Answer (65 of 200, about 10 per test split) has clear signals such as place names, links and phone numbers. Joke is the smallest label (41 of 200, only about 6 per test split), so one wrong prediction moves its F1 by 0.1–0.15. It also sits on the hardest boundary: sarcastic comments that take a side go to Opinion, which leaves Joke with the subtler cases. That is why its target is the loosest.
 
 ---
 
@@ -71,18 +72,17 @@ No label is more than 2.5× the size of the smallest label in labels.csv.
 
 
 **Why this target:**
-
+We are looking to make sure that this is a balanced set that we can find targets for all three categories. If a set is lopsided, the model learns to favor the biggest label and under-predicts the smallest one, which would sink the Joke target in criterion 3.
 
 ---
 
 ## 5.
 
-My labels agree with the staff labels on at least 75% of the shared posts (python agreement.py).
-
+The most-confident third of test predictions has an accuracy of at least 0.85, and at least 0.20 higher than the least-confident third, on all three seeds.
 
 
 **Why this target:**
-
+A confident prediction should be right more often than an unsure one. If the confident third only matched the overall 0.70 from criterion 1, the model's confidence would tell us nothing, so the target sits above it and also requires a clear gap to the least-confident third. The notebook reports both thirds in results.json. Each third is only about 10 comments, so the gap is set at 0.20 (about two comments) rather than anything finer.
 
 ---
 

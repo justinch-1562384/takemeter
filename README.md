@@ -182,7 +182,7 @@ Cold first, Pre-labelled with AI and corrected later.
 device: cpu  (CPU)
 torch:  2.14.1+cpu
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings:** seed 42, 3 epochs, lr 2e-05, batch 16
 
 **Anything I changed from the defaults, and why:** No changes from default
 
@@ -190,6 +190,13 @@ torch:  2.14.1+cpu
 split. If a label had fewer than about 8 in test, say so — it explains a lot
 of next unit's variance. -->
 
+train 139  ·  val 31  ·  test 30
+
+         train  val  test
+label                    
+opinion     65   15    14
+answer      45   10    10
+joke        29    6     6
 
 
 ---
@@ -205,17 +212,17 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I used AI to collate reddit posts within a specific subreddit
+- *What came back:* A variety of 200 comments for use by the TakeMeter for analysis and processing. 
+- *What I changed:* I asked for additional help labelling the comments, and noting which ones were signed manually. 
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I used AI to review my acceptance criteria to see if they were realistic
+- *What came back:* A general overview, but no further edits made
+- *What I changed:* Some of my bounds were deemed too unrealistic, and I made adjustments to make them more concrete. 
 
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** Batch prelabelled, corrected most of the aberrations in post. 
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
