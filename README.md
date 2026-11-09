@@ -23,34 +23,26 @@
 
 ---
 
-<!-- ─────────────────────────────────────────────────────────────────────────
-     HOW TO USE THIS FILE
-
-     Unit 5 asks for the first five sections. Unit 6 adds the five below them.
-
-     Everything is pasted as TEXT. No screenshots, no images.
-
-     ⚠️ The confusion matrix especially. The notebook prints one as a markdown
-     table, ready to copy. A screenshot of a matrix earns nothing. Paste the
-     table.
-     ───────────────────────────────────────────────────────────────────────── -->
-
-<!-- ═══════════════════════ UNIT 5 — THE BUILD ═══════════════════════ -->
-
 ## What This Does
 
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
-Community: r/television (https://www.reddit.com/r/television/)
+Community: r/Seattle (https://www.reddit.com/r/Seattle/)
 
-There are multiple posts where their source is from variety and some other posts marked for discussion among users. Some are news articles, and other are aggregations of content, such as trailers or analysis. 
+We are going to classify these posts based on three intentions:
+
+Answer, Opinion, or Joke
+
 
 Candidate Distinctions:
 
-Around half of the posts reference a news site. Most don't
+Half of the comments provide something concerte, like a place, route, busline, or a fact about the city. These are usually answers. 
 
-Some of the posts have a link to media (i.e trailer, image). Most don't
+Some comments take a specific slant or opinion. THese are usually opnions.  
+
+A noticeable share are humorous. Depending on whether these provide an opinion or not, these are usually jokes. 
+
 
 Some of the posts are intended for conversation between subreddit users. 
 ---
@@ -63,43 +55,58 @@ Some of the posts are intended for conversation between subreddit users.
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `Discussion`
+### `Answer`
 
-**Definition:** A discussion post usually has a question as the main title, with the main intetion of asking people to discuss the premise of the question:
-
-**Example 1:**
-> https://www.reddit.com/r/television/comments/1xbatjg/dan_castellaneta_as_homer_simpson_might_be_the/
-
-**Example 2:**
-> https://www.reddit.com/r/television/comments/1xbvt1x/stunt_casting/
-
-### `Media Post`
-
-**Definition:** A post within r/television that has a title, but is meant to discuss a trailer or piece of media, such as an image or video. 
+**Definition:** A comment that usually provides an answer with information that pertains to the Seattle Community or local info.
 
 **Example 1:**
-> https://www.reddit.com/r/television/comments/1xbs02j/the_lord_of_the_rings_the_rings_of_power_season_3/
-
+> https://www.reddit.com/r/Seattle/comments/1xq8snq/comment/19sagfyo58iqr/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 **Example 2:**
-> https://www.reddit.com/r/television/comments/1xbyfcm/avatar_seven_havens_an_old_world_mover_paramount/
+> https://www.reddit.com/r/Seattle/comments/1xrctd5/comment/19scqyrouj29w/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 
-### `News`
+### `Opinion`
 
-**Definition:** A post within the forum that leads toward a news site, often containing details or additional information about the television industry. Contains quotes from the story and an reference to an entertainment news site
+**Definition:** A comment that agrees, disagrees, or argues regarding a certain opinion.
 
 **Example 1:**
-> https://www.reddit.com/r/television/comments/1wq1l4b/the_rehearsals_nathan_fielder_just_helped_a/
+> https://www.reddit.com/r/Seattle/comments/1xrjh8o/comment/19sd0tx62jb1f/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+**Example 2:**
+> https://www.reddit.com/r/Seattle/comments/1xq8snq/comment/19sb6vwp2ybqa/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+
+### `Joke`
+
+**Definition:** A post within the forum that shares a humorous reaction to a post. 
+
+**Example 1:**
+> https://www.reddit.com/r/Seattle/comments/1xq8snq/comment/19sa6swkfldcz/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 
 **Example 2:**
-> https://www.reddit.com/r/television/comments/1xbanp1/wga_east_is_helping_writers_make_it_harder_for_ai/
+> https://www.reddit.com/r/Seattle/comments/1xrctd5/comment/19scxcelwn8si/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** Opinion vs Joke.
+
+r/Seattle comments are full of sarcasm, and a sarcastic comment is usually
+written as a joke while still taking a side.
 
 **The decision rule I used every time:**
 
-if the post hyperlinks to a video or image, it's media, even if the tone is heated. 
+Take the humor out and see what's left. If what's left is a stance someone
+could agree or disagree with, it's **Opinion**, even when it's said
+sarcastically. If nothing arguable is left (a pun, a meme reference, a riff on
+the post), it's **Joke**.
+
+- "Ah yes, another 'luxury' apartment with no parking, exactly what Capitol
+  Hill needed." → **Opinion** (without the sarcasm: this development is bad
+  for the neighborhood).
+- "The Seattle Freeze is just the city conserving heat." → **Joke** (no
+  position to argue with).
+
+**Tiebreak for Answer vs Opinion:** if the comment replies to a direct question
+with something the asker can act on (a place, a route, a fact), it's
+**Answer**, even if it adds an evaluation ("Go to Paseo, it's the best
+sandwich in the city").
 
 ---
 
@@ -109,18 +116,19 @@ if the post hyperlinks to a video or image, it's media, even if the tone is heat
      cases. -->
 
 **Where the posts came from:**
-https://www.reddit.com/r/television/
+https://www.reddit.com/r/Seattle/
+
 **How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+Cold first, Pre-labelled with AI and corrected later. 
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `opinion` | 94 | 47.0% |
+| `answer` | 65 | 32.5% |
+| `joke` | 41 | 20.5% |
+| **Total** | 200 | 100% |
 
 **Three hard cases**
 
@@ -128,26 +136,41 @@ Say so plainly — the disclosure is required, not penalised. -->
      been, and what you chose. These are worth more than the easy 190. -->
 
 **1.**
-> *The post:*
+> *The post:* "I certainly am. I make several million dollars every year. I
+> can afford to live anywhere I want. But I am going to move to some shithole
+> state where my family will be miserable just to stick it to the libs in WA -
+> even if I have to pay higher taxes there! Ha ha ha ha - I showed them!
+> /sarcasm" ([link](https://www.reddit.com/r/Seattle/comments/1xo3myh/millionaires_tax_opponents_definitely_still/19s5grk9x4ydg/),
+> thread: "Millionaires Tax Opponents Definitely Still Moving to Tennessee Any
+> Minute Now")
 >
-> *Could have been:*
+> *Could have been:* `joke` or `opinion`. It's written as a comic bit and
+> signed /sarcasm, but it mocks people who threaten to leave over the
+> millionaires tax, which is a stance.
 >
 > *I chose, because:*
-
+> Opinion, as sarcasm falls under opinion in this case, and a joke pertains to something more concrete, pertaining to a mem.,
 **2.**
-> *The post:*
+> *The post:* "42% voted to repeal the tax. There's no way that any significant
+> amount of that 42% make > 1M a year." ([link](https://www.reddit.com/r/Seattle/comments/1xotn0q/wa_millionaires_tax_is_upheld_as_initiative_645/19s71xdjvwsg4/),
+> thread: "WA 'millionaires tax' is upheld as Initiative 645 fails")
 >
-> *Could have been:*
+> *Could have been:* `answer` or `opinion`. It opens with a checkable fact
+> (the 42% repeal vote), then uses it to argue that most of those voters
+> weren't affected by the tax.
 >
 > *I chose, because:*
-
+> Answer, as this answered a specific question prior to adding to their own opinion. In this case, the answer made up the bulk of the comment. 
 **3.**
-> *The post:*
+> *The post:* "She was beautiful ❤️" ([link](https://www.reddit.com/r/Seattle/comments/1xr4kgp/kai_loved_going_on_urban_hikes_she_was_over_14/19sc69vqz67b5/),
+> thread: a memorial post for a 14-year-old dog)
 >
-> *Could have been:*
+> *Could have been:* `opinion` or `answer`, though it fits neither well. It
+> offers sympathy, not an arguable stance or information, and it isn't a
+> joke. It's one of about 18 sympathy or praise comments with no clear label.
 >
 > *I chose, because:*
-
+> Opinion, as there was not a concrete fact involved. 
 ---
 
 ## The Training Run

@@ -3,21 +3,6 @@
 Five criteria that say what "working" means for this classifier, written in
 unit 5 **before** anything was trained.
 
-**All five are yours this time.** None are given. You've had two projects of
-practice.
-
-An acceptance criterion names a number. *"The model is accurate"* is an
-opinion. *"Every label has an F1 of at least 0.60 on the held-out set"* is a
-criterion.
-
-Under each, write a sentence or two on **why that number**. A reason that says
-something about your data or your taxonomy earns credit — *"I picked 0.60 F1
-for `reaction` because it's my smallest label and I only have about 50
-examples of it"*. A reason that could be attached to any project does not.
-
-> Missing your own targets next unit costs you nothing. Setting a target so
-> easy you can't miss it does.
-
 ---
 
 ## Pick numbers you can defend
@@ -51,62 +36,52 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. 
 
-<!-- Your criterion. It must name a number. -->
-
-
+Test-set accuracy is at least 0.70 on all three seeds.
 
 **Why this target:**
-
-
-
+When choosing this target, we want to keep the bounds tight but not exacting, as the type of post can vary based on the content. As such, 0.7 is a good baseline, with testing revealing whether the target is realistic or not. 
 ---
 
 ## 2.
 
-<!-- Your criterion. -->
-
+News has an F1 of at least 0.75 on all three seeds.
 
 
 **Why this target:**
-
-
+Given that the News section are the most numerous of the posts, the accuracy should increase as more data points are available. 
 
 ---
 
 ## 3.
 
-<!-- Your criterion. -->
-
+Discussion and Media Post each have an F1 of at least 0.55 on all three seeds.
 
 
 **Why this target:**
 
-
+This is noted due to the 
 
 ---
 
 ## 4.
 
-<!-- Your criterion. -->
-
+No label is more than 2.5× the size of the smallest label in labels.csv.
 
 
 **Why this target:**
-
 
 
 ---
 
 ## 5.
 
-<!-- Your criterion. -->
+My labels agree with the staff labels on at least 75% of the shared posts (python agreement.py).
 
 
 
 **Why this target:**
-
 
 
 ---
